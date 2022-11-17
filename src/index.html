@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page title</title>
+    <link rel="stylesheet" href="./sass/index.scss" /> 
+  </head>
+  <body>
+    <div class="form-container">
+      <form class="search-form" id="search-form">
+        <input class="search-form__input" type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
+        <button class="search-form__button" type="submit">Search</button>
+      </form>
+    </div>  
+  
+
+  <div class="gallery">
+  <div class="photo-card">
+    <img src="./images/cat1.jpg" alt="cat1" loading="lazy"  width="320"/>
+    <div class="info">
+      <p class="info-item">
+        <b>Likes</b>
+      </p>
+      <p class="info-item">
+        <b>Views</b>
+      </p>
+      <p class="info-item">
+        <b>Comments</b>
+      </p>
+      <p class="info-item">
+        <b>Downloads</b>
+      </p>
+    </div>
+  </div>
+  </div>
+
+  <button type="button" class="load-more">Load more</button>
+  </body>
+  <script type="module" src="./index.js"></script>
+</html>
