@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
     <link rel="stylesheet" href="./sass/index.scss" /> 
+    <link rel="stylesheet" href="./index.css">
   </head>
   <body>
-    <div class="form-container">
-      <form class="search-form" id="search-form">
-        <input class="search-form__input" type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
-        <button class="search-form__button" type="submit">Search</button>
+    <div class="form-container p-5 bg-sky-600 flex justify-center rounded-full mb-5 shadow-md">
+      <form class="search-form " id="search-form">
+        <input class="search-form__input rounded-full p-2 mr-5 italic border-solid border-2 border-indigo-600 shadow-md  " type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
+        <button class="search-form__button rounded-full p-2 italic border-solid border-2 border-indigo-600 shadow-md bg-cyan-300" type="submit">Search</button>
       </form>
     </div>  
   
 
-  <div class="gallery">
-  <div class="photo-card">
-    <img src="./images/cat1.jpg" alt="cat1" loading="lazy"  width="320"/>
-    <div class="info">
+  <div class="gallery flex justify-around mb-10  ">
+  <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded p-5 bg-purple-300">
+    <img class="mb-5 rounded-lg " src="./images/cat1.jpg" alt="cat1" loading="lazy"  width="320"/>
+    <div class="info flex justify-around">
       <p class="info-item">
         <b>Likes</b>
       </p>
@@ -33,9 +34,64 @@
       </p>
     </div>
   </div>
+    <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded p-5 bg-purple-300">
+      <img class="mb-5 rounded-lg " src="./images/cat3.jpg" alt="cat1" loading="lazy" width="320" />
+      <div class="info flex justify-around">
+        <p class="info-item">
+          <b>Likes</b>
+        </p>
+        <p class="info-item">
+          <b>Views</b>
+        </p>
+        <p class="info-item">
+          <b>Comments</b>
+        </p>
+        <p class="info-item">
+          <b>Downloads</b>
+        </p>
+      </div>
+    </div>
+    <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded p-5 bg-purple-300">
+      <img class="mb-5 rounded-lg " src="./images/cat3.jpg" alt="cat1" loading="lazy" width="320" />
+      <div class="info flex justify-around">
+        <p class="info-item">
+          <b>Likes</b>
+        </p>
+        <p class="info-item">
+          <b>Views</b>
+        </p>
+        <p class="info-item">
+          <b>Comments</b>
+        </p>
+        <p class="info-item">
+          <b>Downloads</b>
+        </p>
+      </div>
+    </div>
+    <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded p-5 bg-purple-300">
+      <img class="mb-5 rounded-lg " src="./images/cat2.jpg" alt="cat1" loading="lazy" width="320" />
+      <div class="info flex justify-around">
+        <p class="info-item">
+          <b>Likes</b>
+        </p>
+        <p class="info-item">
+          <b>Views</b>
+        </p>
+        <p class="info-item">
+          <b>Comments</b>
+        </p>
+        <p class="info-item">
+          <b>Downloads</b>
+        </p>
+      </div>
+    </div>
   </div>
-
-  <button type="button" class="load-more">Load more</button>
+<div class="flex justify-center">
+<button type="button"
+  class="load-more rounded-full p-2 italic border-solid border-2 border-indigo-600 shadow-md bg-cyan-300 ">Load
+  more</button>
+</div>
+  
   </body>
   <script type="module" src="./index.js"></script>
 </html>
