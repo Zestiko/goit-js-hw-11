@@ -27,7 +27,7 @@ refs.loadMoreButton.addEventListener('click', onLoadMoreClick)
 function onFormSearch(e) {
   e.preventDefault();
   pageCounter = 1;
-  formData  = new FormData(refs.form);
+  formData  = new FormData(event.currentTarget);
   console.log(formData);
   for (const value of formData.values()) {
     inputValue = value.trim().replace(/ /ig, '+');    
