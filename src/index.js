@@ -11,7 +11,9 @@ const BASE_URL = "https://pixabay.com/api/"
 //Variables
 let pageCounter = 1;
 let inputValue = '';
-
+let hitsCounter = 0;
+//init Gallery
+let galleryNew = new SimpleLightbox('.gallery a', { captionsData: 'title', captionDelay: 250 });
 //Refs
 const refs = {
   form: document.querySelector('#search-form'),
@@ -26,7 +28,9 @@ refs.loadMoreButton.addEventListener('click', onLoadMoreClick)
 //Functions
 function onFormSearch(e) {
   e.preventDefault();
+  hitsCounter = 0;
   pageCounter = 1;
+  refs.gallery.innerHTML = "";
   const formData  = new FormData(e.currentTarget);
   console.log(formData);
   for (const value of formData.values()) {
@@ -78,6 +82,8 @@ function careateMarkup (response) {
         </div>`).join('');
       addImagesOnPage(markup);
       addLoadMoreButton();
+      galleryNew.refresh();
+      loadImagesCounter(response);
     }
         
   // return markup;
@@ -85,12 +91,21 @@ function careateMarkup (response) {
 
 function addImagesOnPage(markup) {
   refs.gallery.innerHTML += markup
-  console.log(markup)
 };
 
 function addLoadMoreButton() {
   refs.loadMoreButton.classList.remove("hidden")
 }
+function remooveLoadMoreButton() {
+  refs.loadMoreButton.classList.add("hidden")
+}
+function loadImagesCounter(response) {
+  hitsCounter += response.data.hits.length;
+  console.log(hitsCounter);
+  if (hitsCounter >=response.data.totalHits ) {
+    Notify.failure("We're sorry, but you've reached the end of search results.");
+    remooveLoadMoreButton();
+  }
+  
+}
 
-//init Gallery
-let galleryNew = new SimpleLightbox('.gallery a', { captionsData: 'alt', captionDelay: 250 });
