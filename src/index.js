@@ -47,18 +47,29 @@ function onLoadMoreClick(e) {
 async function axiosImages(name, pageCounter) {
   try { 
     const images = axios(`${BASE_URL}?key=${API_KEY}&q=${name}&image_type=photo0&orientation=horizontal&safesearch=true&per_page=30&page=${pageCounter}`)
-      .then(careateMarkup);
+      .then(workWithPromise);
   } catch (error) {
     console.error(error);
   }  
 };
 
-function careateMarkup (response) {
+function workWithPromise (response) {
     console.log(response);
     if (response.data.hits.length === 0) {
       Notify.failure('Qui timide rogat docet negare');
+      remooveLoadMoreButton();
     } else {
-      const markup = response.data.hits.map(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) => 
+      Notify.success(`Hooray! We found ${response.data.totalHits} images.`);
+      let markup = createMarkup(response)
+      addImagesOnPage(markup);
+      addLoadMoreButton();
+      galleryNew.refresh();
+      loadImagesCounter(response);
+    }
+        
+};
+function createMarkup(response) {
+    const markup = response.data.hits.map(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) => 
       `  <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
           <a  href="${largeImageURL}"><img class="rounded-lg mb-3" src="${webformatURL}" alt="cat1" title="${tags}" loading="lazy" width="320" height="213" /></a>
           <div class="info flex justify-around w-80">
@@ -80,15 +91,8 @@ function careateMarkup (response) {
             </p>
           </div>
         </div>`).join('');
-      addImagesOnPage(markup);
-      addLoadMoreButton();
-      galleryNew.refresh();
-      loadImagesCounter(response);
-    }
-        
-  // return markup;
-};
-
+  return markup;
+}
 function addImagesOnPage(markup) {
   refs.gallery.innerHTML += markup
 };
