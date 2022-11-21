@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./index.css">
   </head>
   <body>
-    <div class="form-container p-5 bg-sky-600 flex justify-center rounded-full mb-5 shadow-md">
+    <div class="form-container p-5 bg-sky-600 flex justify-center rounded-full mb-5 shadow-md container mx-auto">
       <form class="search-form " id="search-form">
         <input class="search-form__input rounded-full p-2 mr-5 italic border-solid border-2 border-indigo-600 shadow-md  " type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
         <button class="search-form__button rounded-full p-2 italic border-solid border-2 border-indigo-600 shadow-md bg-cyan-300" type="submit">Search</button>
@@ -16,79 +16,846 @@
     </div>  
   
 
-  <div class="gallery flex justify-around mb-10  ">
-  <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded p-5 bg-purple-300">
-    <img class="mb-5 rounded-lg " src="./images/cat1.jpg" alt="cat1" loading="lazy"  width="320"/>
-    <div class="info flex justify-around">
-      <p class="info-item">
+  <div class="gallery flex flex-wrap justify-around mb-10 container mx-auto ">
+  <!-- <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+    <a  href="./images/cat1.jpg"><img class="rounded-lg mb-3" src="./images/cat1.jpg" alt="cat1" title="" loading="lazy" width="320" height="213" /></a>
+    <div class="info flex justify-around w-80">
+      <p class="info-item flex flex-col ">
+        <b>Likes</b>
         <b>Likes</b>
       </p>
-      <p class="info-item">
+      <p class="info-item flex flex-col ">
+        <b>Views</b>
         <b>Views</b>
       </p>
-      <p class="info-item">
+      <p class="info-item flex flex-col ">
+        <b>Comments</b>
         <b>Comments</b>
       </p>
-      <p class="info-item">
+      <p class="info-item flex flex-col ">
+        <b>Downloads</b>
         <b>Downloads</b>
       </p>
     </div>
   </div>
     <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded p-5 bg-purple-300">
-      <img class="mb-5 rounded-lg " src="./images/cat3.jpg" alt="cat1" loading="lazy" width="320" />
-      <div class="info flex justify-around">
-        <p class="info-item">
-          <b>Likes</b>
-        </p>
-        <p class="info-item">
-          <b>Views</b>
-        </p>
-        <p class="info-item">
-          <b>Comments</b>
-        </p>
-        <p class="info-item">
-          <b>Downloads</b>
-        </p>
-      </div>
+      <a href="./images/cat2.jpg"><img src="./images/cat2.jpg" alt="cat1" title="" loading="lazy" width="320" /></a>
+    <div class="info flex justify-around w-80">
+      <p class="info-item flex flex-col ">
+        <b>Likes</b>
+        <b>Likes</b>
+      </p>
+      <p class="info-item flex flex-col ">
+        <b>Views</b>
+        <b>Views</b>
+      </p>
+      <p class="info-item flex flex-col ">
+        <b>Comments</b>
+        <b>Comments</b>
+      </p>
+      <p class="info-item flex flex-col ">
+        <b>Downloads</b>
+        <b>Downloads</b>
+      </p>
+    </div>
+    </div>
+    
+    <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded p-5 bg-purple-300">
+      <a href="./images/cat3.jpg"><img src="./images/cat3.jpg" alt="cat1" title="" loading="lazy" width="320" /></a>
+    <div class="info flex justify-around w-80">
+      <p class="info-item flex flex-col ">
+        <b>Likes</b>
+        <b>Likes</b>
+      </p>
+      <p class="info-item flex flex-col ">
+        <b>Views</b>
+        <b>Views</b>
+      </p>
+      <p class="info-item flex flex-col ">
+        <b>Comments</b>
+        <b>Comments</b>
+      </p>
+      <p class="info-item flex flex-col ">
+        <b>Downloads</b>
+        <b>Downloads</b>
+      </p>
+    </div>
     </div>
     <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded p-5 bg-purple-300">
-      <img class="mb-5 rounded-lg " src="./images/cat3.jpg" alt="cat1" loading="lazy" width="320" />
-      <div class="info flex justify-around">
-        <p class="info-item">
+      <a href="./images/cat4.jpg"><img src="./images/cat4.jpg" alt="cat1" title="" loading="lazy" width="320"/></a>
+      <div class="info flex justify-around w-80">
+        <p class="info-item flex flex-col ">
+          <b>Likes</b>
           <b>Likes</b>
         </p>
-        <p class="info-item">
+        <p class="info-item flex flex-col ">
+          <b>Views</b>
           <b>Views</b>
         </p>
-        <p class="info-item">
+        <p class="info-item flex flex-col ">
+          <b>Comments</b>
           <b>Comments</b>
         </p>
-        <p class="info-item">
+        <p class="info-item flex flex-col ">
+          <b>Downloads</b>
           <b>Downloads</b>
         </p>
       </div>
     </div>
-    <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded p-5 bg-purple-300">
-      <img class="mb-5 rounded-lg " src="./images/cat2.jpg" alt="cat1" loading="lazy" width="320" />
-      <div class="info flex justify-around">
-        <p class="info-item">
-          <b>Likes</b>
-        </p>
-        <p class="info-item">
-          <b>Views</b>
-        </p>
-        <p class="info-item">
-          <b>Comments</b>
-        </p>
-        <p class="info-item">
-          <b>Downloads</b>
-        </p>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/g95a463d48deea9396fc81750af378e8cbd85df48a9ea3c691dc9fcc15508ab29474d4da9bc02ec3885b5e68aecb08d9b304f9ca04187b9fdfa6e1ad6448f3716_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/gbc7745ecd050020816140e229e960f3fcf565eb82712da8743d8fee2d747174688f45c0bc4bd4e1741b1e5b184faa509_640.jpg"
+            alt="cat1" title="tree, cat, silhouette" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>2692</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>1091443</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>507</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>536269</b>
+          </p>
+        </div>
       </div>
-    </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/gdd7b847b12a40344f108d2ca3211f75a6f8da25827eaceb9bf656cf932b357592feefccb200967252d2abae7b984cdc8f14afb94c740e3f0405dc6c8d3961083_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/gb7b80487e96505f3a47ea07683bdff2d7cae2573b2867033dcfc724a05a0a40af5cee933347fe619d3eb9326cf6dbbeebb1f72d90f4f9285324fd4888f3fe497_640.jpg"
+            alt="cat1" title="cat, young animal, kitten" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>2216</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>1050170</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>348</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>594750</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/g934ffac89fcabb419a450f9332787a75a43ce426e3b43d0eb009e48ace6084717205dcadd76a3d84465bab5e7f438030ea9e5852a0e7eaf8f18e2d3631b9ef5b_1280.png"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/gc80662ec3c87b235becd0520ce99026f71371a5b7339440630a46f748a8f0dd92f7c2488356799b29be6720fffd8ee892dea7cb329edd9500e4f94b36fdcdbaf_640.png"
+            alt="cat1" title="cat, cat's eyes, blue eyes" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>1652</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>874252</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>248</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>426174</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/g5fcd0f728af4e43ae5b55dfb3ba5e07d7ceb01c188292d3d877584737414fa3b1ecb589f4762e3d2d67f415b6acfb7f068f10ce443c061dd9a17876ea93d07fd_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/g6f399b1100a98adc39a402841661d3836dc9ccdff398f25e97b273ba16a69cc70df680c5b45176d6fd4a7101d0d5f362da09f6cbe50f239885f20fa7956364e9_640.jpg"
+            alt="cat1" title="cat, animal, cat portrait" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>1607</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>584872</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>291</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>330186</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/g9464f95ced12b4dc76965d7c3ecc274b57fc1e0cbc215723f8dd7bc6d8b8ee2e5867045d14df18875ee670040b3697e9a0673fc3044d58e4a17dd11d14e63124_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/g5b6ef4843070ae4ce680e4104f9ed41c6518b5f45ca98bb32f15bef824bb46e0830bebdc69e72b977bf3cdd5ee203ed4_640.jpg"
+            alt="cat1" title="maine coon, cat, cat's eyes" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>1517</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>585315</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>213</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>330824</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/gaf1c56a8ae7ddf453405675f66cd771add719e3fb84fa2bf6fe12f6256e59d562403ec56eb98101529b6caa33aac59d708a10b903695bfcb805cf2f5b94cf4fc_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/gce283ade9ed5f2f6edc3b29760e949b09738826b8171bd266a921b8992b46dfced571b45306d9485806e2cc19ed71e52_640.jpg"
+            alt="cat1" title="cat, pet, licking" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>1486</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>686810</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>294</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>320434</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/g6a983a6fc5d861b09198f206f239462b3e998682886ff4c4a5b5564faeefff920c3746ef57e3cb62d91b37b4f6ade0f99a75cb10f75b293bce70fcc14f6c6dc2_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/g6f301bcde71029198c9868aa5f8a70649363939d37cf5d5fed9e35745b8557a3cea143dbca8c25f65efa853064606d3938bf2aea58c5fe0f87026f48c7f23ab0_640.jpg"
+            alt="cat1" title="cat, flower, kitten" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>1765</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>751819</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>312</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>437658</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/gcb9cb952439780174e8e3b3d4ee0bd560bf51265c0d4f2dbc6ad406cf7b660236e43b90a7c3d98b80765aaee5e70b0ac844cfa21fb9cc671be3fc235a9edefe8_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/g97dac4c25980ec145c956d4df557a6bff587fcb11c40ff263b50e7dae6db49e092b13c1aa8e0a1e75db2f26ba74a3265c0a62d5647e14282ba20a9162d36d0b1_640.jpg"
+            alt="cat1" title="cat, kitten, pets" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>1228</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>468044</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>221</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>268552</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/g5d05bb6411c8c5fb51d012f09640d1a78ad42068e034a015df187e2d914a72eb79e65a4608e7bcea718bb2ab22aecc7275ad7ce911796d6b729432a62829779c_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/g1326c60b74ede2c727bab1094b0304f7d160f654174917aa4c59842d2ab7c70861b368665dd8e0b51d6b54f24654e1d82c86df8a52c2e56c2c481bff3aef647b_640.jpg"
+            alt="cat1" title="kitty, playful, flowers" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>1122</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>573967</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>156</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>361024</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/g3f951fd30b78e6f651e3039b1fba84648b740422c6cb553dbdbfa0dc9c2a80dfb237e0bd0536bc8354380690f2bf014efb93f51fc2e76e7ee5ac9d8948fc6940_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/g46acc4792c64aca0ac2b34a0f97109b2d5b5bd1fd45caf220e608d0ae743c74d13e853fb52d9afe27fc95dc0aa333f71fbbbc3bf4faa45261bdcb31e828dab15_640.jpg"
+            alt="cat1" title="cat, tabby, face" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>969</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>314360</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>133</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>187429</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/gf605b3b90945ff3b04b6922274ebd1beb7eef470e4b5c7511d9926f6dcecfb6cfb79108e5a12f628aac23382e03eb7396174fa83a9a9b14a8811c6022631bbdd_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/g4a254b8c32773ac48323b2b8e53b9f07e6ed80645f30602ea0734febd269fac8bada347c334bed0398a5d1670835403671759fd35a37717e220b88d4a563ebd3_640.jpg"
+            alt="cat1" title="cat, kitten, pet" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>853</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>379082</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>117</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>214487</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/g4e87ad762737bb559c4e69a843b0d4d12a6f50f13c63308f1d8c51cf21780da75c2424dab5b73f6533d22c0545ca97a9841651ac562fbf6debb8fc718551ed92_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/g82e84bc3eabfd3a5dbf6efc45682c3b93a338c3db7eb3c6f6564913e17ac2ea64be507f1c3c8d50e5522b574530240152630cc5634250a6442a4cf87d1cc13dc_640.jpg"
+            alt="cat1" title="kitten, cat, pet" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>864</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>355858</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>167</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>263534</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/g13e16fd50de96124578318feedce9b404ada1fe5440513bd3fd2a34da942b088166454de6772d0357fdc3765d8624c551607d2619ee0aeff60a3a3a4fc97661b_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/gfbe97d6b91db4abc702f870c326dc36c5b7383c2a600602b2b3e76f24d4a7132bcd913d28b63bf0bbac8b0b7e249e7a152ffd0fe04b859bdbc3bfa78432266d6_640.jpg"
+            alt="cat1" title="woman, cat, pet" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>665</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>88854</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>77</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>43366</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/ga3c82c9c6e31bb89dcdd7c031f920017f739bbea2e088f26f1512e508882754dde312d4025007a785b941b615e741977cc39ac8c892733b66626b86025e4986f_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/g5c6bb18157839b988f226f7e27e7740820e4503f28ebce3e7151e4029cb39a51b76a9059272accd0a0a6b412e9a43189711d98e2fb1c42efa72e6ba1e26507ec_640.jpg"
+            alt="cat1" title="cat, kitten, tree" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>831</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>283170</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>100</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>180523</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/gab450e157e3ebb487f220a81fc982fd7db51d3decb09bcc4994f9cb2b096491067f0501e1a16c9fe0f883731938f4ebaedf08e68cf9fc2770ed0e3547285fbf8_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/ga4aa5eb20867d0faea19d32561df5d6ddd3d56551d6847266d74a27f011f2b08811fe0825eb95a2a6307c2dcffd06adfe334c777ba3f7ef58ffa34974958399a_640.jpg"
+            alt="cat1" title="tiger, swamp, big cat" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>1629</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>719855</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>207</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>471747</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/g66a4b18274aa49ce03400b4051d699a081da766ad9f141b312ddc7c10f46ae518bee24b1a4b6403ed3971dd785122707fa18d610e4061414b2d3b433d2bdb38b_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/g93ec7f9bd8b5bbc05e6e3147cd3403513a8cdd58e024ffd898660bd7e3b32e5dc2825db84bd928f17ef26e5775fa820557eca571e007b48c72247db50530bdd3_640.jpg"
+            alt="cat1" title="cat, face, eyes" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>770</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>248112</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>96</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>168537</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/ga434ce5c7de32386cf350bfb686f61dea40e3ece13b2420a5424048679b0790692e9c1da536e63d25c03989d4fca121a5c6bbdc9f0e93f1f59ffa8fc04e32530_1280.png"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/g4355f4a4376457196130bcacfdffd88911f5f4e7b8fde8aae58108639addcbe7008a487485141dd3b8272f184e3e0e88d3a21244795e62794a3688455d92857b_640.png"
+            alt="cat1" title="dog, cat, domestic animal" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>685</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>239742</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>203</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>129421</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/g3a383ad8425e4228c0f9d3cd083b5294415d1d142ed3462a69fe21886639038cec25aaf59e4bbb3a1542092a2fa11450ed90234a16c558e182c726f43701c114_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/gea1a4d3ede1e5768b19c354ea970257968bd158f54a9de6302496424b620ae98e352787cf2c84426e1a86b0c664af6f26f80e8c662e1c207d17c09953252c886_640.jpg"
+            alt="cat1" title="cat, black, animal" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>740</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>153728</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>82</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>99447</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/g00affd45f394e6d4464b3bde3fed3adc92ce0a994d0ed60cbe2d72f1d3d900938ee939cd5902ab4043fcb045f961fd7bbc4207fc1d8e4b1e868dbf1a42b76191_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/ga6c5397e80408de9a599b36198d310fe1164f4f9d28c69da13b28fbe8ef4da8b22142a8ef6fc7fcb2416893caaa26015_640.jpg"
+            alt="cat1" title="cat, pet, animal" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>670</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>883211</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>92</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>144928</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/g1a8e0600163319d78a5bcffbceef2890d5bdbb8b6ad50a5c811f4b295955ee23be5dec48a1a2cda463f7b1d89b66d01f28d765a9ae2942aabe0551eb818a1383_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/g82f67f44c0cdc1d5000c3236cdaa137e4c04c6a11cd2d16a4b6f3e01e0006df9922ed0b33c4fa269424540d484cf7ca89a6a6ff2812540f6cf0df80916cbb4da_640.jpg"
+            alt="cat1" title="sunset, cat, shadows" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>753</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>248676</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>77</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>183290</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/g08aae2042ebd58b6f235d18b845e09f17bdc2fe96f0e7a674e22246c9db7a9819f87a8582c5eb729567d1d5b378d0fca1cdcc57d873a8bf618aac6df4742f559_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/g8828841ba3d6d7b372ab72ddc2a5865985e2d3f291a35f2989ffa17281970e4f498fc008d560af98d1231c999a48c91b12f6a7ffb5b1249df2bb471add93fdd8_640.jpg"
+            alt="cat1" title="tiger, cat, big cat" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>926</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>479306</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>144</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>353024</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/g0fa4e5a82b5c4dab514da11b5767aafe4ee43198a8cf38962121afbc73b2478670b6fc749818d484f5fa17a71fbccb9517477200fc91be3de623668d7019457c_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/g8d4e13d73b0688fb29b45dab470f9017eb39e74aab673ce579dd001d523ada4b53548fbb96e1e55f391bce88378778f83c27810936d6761dd11ce7bd11b1c778_640.jpg"
+            alt="cat1" title="hd wallpaper, cat, portrait" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>682</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>181094</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>179</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>126746</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/g4777302740c62b199c10e50f8099c386d142824e7da00e3bba5bca3dc09f20e4e6fa392f6f6b86b144b35efdc7203c2894cb4165731edabe29f5ebffcfccb522_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/g204c21fa3c88ccd20d42554f34b2720b329223b2efa5eba8bc41bcfebd7e91dbc376f1e78d931e32ef5c4b4849701b6524a3537915aeee6ebdafd47081249172_640.jpg"
+            alt="cat1" title="pets, cat, dog" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>813</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>473795</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>211</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>291695</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/gde329ae0be676af3ec594e1aadfb76e2094d8d4e9de1372e531bbd1bacc3c3ea986a19336cee033db3598cde4f18e811c684b2351ca9b015df57d1c40644831f_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/g90a5e33918732b6f0081485cc56acc041f5a5bf8fb07fc74b51ca16b8ca819c1527c08d8014a6a2a8baf74c4c474c4bfb4ee1e025349199de43c91a9a795884f_640.jpg"
+            alt="cat1" title="cat, pet, animal" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>633</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>232848</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>73</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>136046</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/ge1d5efe44964c005aada84b6d420c8fa38295a70dc521e7706ae3d8badea7d7d3a2ff45ba4b1360cf94aca82f5719a2e3250f4b8bbdb55919f8979435aa9db5d_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/g362de12af46c344f3ff07c9567c50ef75b98a37f20fd6ea5c43948ed2d48614d3cee25e370c3874b8808a169d37c80cd_640.jpg"
+            alt="cat1" title="cat, pet, yawning" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>661</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>262219</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>86</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>131207</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/gc1209034f8c485bb661d4c8826104367264a01b318dfd331522f2eee1e9c68dd5510b308a5e62813e303e453b8b9b9c0d3bc042dea6fa8246ebff726bd691599_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/gb3a6461008aec2236fde8352cd28a45a5a6885ebbc89857a3a2e03aaf011000385e4c91a3ecfa2d7d7bc71c1837029fbddf507d623bcd2cd85fa159be63c44a7_640.jpg"
+            alt="cat1" title="african lion, wild cat, feline" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>1602</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>926035</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>221</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>603572</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/ge1f9fb6fec1933d74b141ee5239d2f57089a9c6607d22be7d234a7196698220cc59303afa7ab14b91c1b8e54a3fe268bfad705b03b3ec40bcc09ba69e45ce755_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/g7c56a9203571d32702523157224092f94f14fd6b27a0a2d6de07494dd22646cef5f562b9cdfa60b2394e40a0aab61b58819cfbb7436ca2da26bf27d3a3092886_640.jpg"
+            alt="cat1" title="cat, domestic animal, puss" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>724</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>249728</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>137</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>180055</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/g7eecb2be3baabe4ef7ddcc6ea235d1fba65fdfdf6d54f9b1f98e9ca2f39547c01d6f4cb457ca406514eff970b387dde21b0d6dfb7625999526edb807f6c46bca_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/g8838b623a6fa68059255d180abc3a5c0faa928a59712bb25e76b60286732d658c2333a4d56165024d315fd661617c7a82de5ee5f362c7831a04757ec63eb328e_640.jpg"
+            alt="cat1" title="cat, pet, feline" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>634</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>218620</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>208</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>153940</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/ga8d5de067ae02effb348c838044b526052a5bd70ccc2f10df137731d0191ad52cb180f0f51f4b2170c3313fc63901eb5_1280.jpg"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/g535ef7c7b826f80e85f4aedd3bbf844c8ab8260871a5a2a7c9c16cfcc2336f17ceadb717fd1bac4eefc010cfebc32cec_640.jpg"
+            alt="cat1" title="cat, pet, animal" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col ">
+            <b>Likes</b>
+            <b>579</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Views</b>
+            <b>194688</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Comments</b>
+            <b>80</b>
+          </p>
+          <p class="info-item flex flex-col ">
+            <b>Downloads</b>
+            <b>115660</b>
+          </p>
+        </div>
+      </div>
+      <div class="photo-card  border-solid border-2 border-indigo-600 shadow-md rounded-lg p-5 bg-purple-300 mb-5">
+        <a
+          href="https://pixabay.com/get/g2b81a39897b64474dfeb4417e739651e02f051fdc2b178545ae891ae829f33da20e0a623eecbb4584103f13b7df38b51cbce73765484d6ef1920515f1374f798_1280.png"><img
+            class="rounded-lg mb-3"
+            src="https://pixabay.com/get/g3ffe626e1088e2a68bf9aba37744e9b3c5897f1a5d760f6dbf04e98ea61b6ac05f77c42145d405742f37db91805472aa72a9c6a75f107a4ed50dbf5e9770ff72_640.png"
+            alt="cat1" title="renovation, paint, cat" loading="lazy" width="320" height="213" /></a>
+        <div class="info flex justify-around w-80">
+          <p class="info-item flex flex-col items-center">
+            <b>Likes</b>
+            <b>595</b>
+          </p>
+          <p class="info-item flex flex-col items-center ">
+            <b>Views</b>
+            <b>152419</b>
+          </p>
+          <p class="info-item flex flex-col items-center ">
+            <b>Comments</b>
+            <b>171</b>
+          </p>
+          <p class="info-item flex flex-col items-center">
+            <b>Downloads</b>
+            <b>99365</b>
+          </p>
+        </div>
+      </div> -->
   </div>
 <div class="flex justify-center">
 <button type="button"
-  class="load-more rounded-full p-2 italic border-solid border-2 border-indigo-600 shadow-md bg-cyan-300 ">Load
+  class="load-more rounded-full p-2 italic border-solid border-2 border-indigo-600 shadow-md bg-cyan-300 hidden ">Load
   more</button>
 </div>
   
